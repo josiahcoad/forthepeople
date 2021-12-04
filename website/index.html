@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Donations! Donations!</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div>
+        <div>
+            <input type="text" id="txtName" placeholder="Enter your name" />
+        </div>
+        <div>
+            <input type="text" id="txtEmail" placeholder="Enter your email address" />
+        </div>
+        <div>
+            <input type="text" id="txtPhone" placeholder="Enter your contact phone number" />
+        </div>
+        <div>
+            <input type="text" id="txtPULoc" placeholder="Enter the address where Donation is to be picked up" />
+        </div>
+        <div>
+            <textarea id="msg" name="msg" placeholder="Describe briefly what you have to donate and how many people it will serve..." style="height:100px"></textarea>
+        </div>
+        <div>
+            <input type="button" id="bt" value="Submit" onclick="submitData()" />
+        </div>
+    </div>
+    <div id='confirmation-section'></div>
+    <button onclick="getData()">Get Data</button>
+    <div id='data-dump'></div>
+    <script src="index.js"></script>
+</body>
+</html>
