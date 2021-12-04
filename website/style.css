@@ -1,0 +1,62 @@
+div {
+  padding: 10px;
+  overflow: hidden;
+}
+
+
+.lw {
+  font-size: 60px;
+}
+
+h {
+  display: block;
+  font-size: 50px;
+  text-align: center;
+}
+
+p {
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  color: rgba(0, 0, 0, 0, 1);
+  background: -webkit-gradient(linear, 0 100%, 0 0, from(rgba(0, 0, 0, .4)), to(rgba(255, 255, 255, .2)));
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, .4), rgba(255, 255, 255, .2));
+  background: -moz-linear-gradient(bottom, rgba(0, 0, 0, .4), rgba(255, 255, 255, .2));
+  background: -o-linear-gradient(bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .2));
+  background: linear-gradient(bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .2));
+}
+
+div {
+  padding: 10px;
+  overflow: hidden;
+}
+
+input[type=text],
+textarea,
+select {
+  font: 17px Calibri;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid grey;
+  border-radius: 6px;
+}
+
+input[type=button] {
+  font: 17px Calibri;
+  width: auto;
+  float: right;
+  cursor: pointer;
+  padding: 7px;
+}
+
+.button-looks-like-a-link {
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  color: #069;
+  text-decoration: underline;
+  cursor: pointer;
+}

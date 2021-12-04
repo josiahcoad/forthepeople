@@ -2,34 +2,92 @@
 <html>
 
 <head>
-    <title>Donations! Donations!</title>
-    <link rel="stylesheet" href="index.css">
+  <title>FooDistro</title>
+  <link type="text/css" rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <div>
-        <div>
-            <input type="text" id="txtName" placeholder="Enter your name" />
-        </div>
-        <div>
-            <input type="text" id="txtEmail" placeholder="Enter your email address" />
-        </div>
-        <div>
-            <input type="text" id="txtPhone" placeholder="Enter your contact phone number" />
-        </div>
-        <div>
-            <input type="text" id="txtPULoc" placeholder="Enter the address where Donation is to be picked up" />
-        </div>
-        <div>
-            <textarea id="msg" name="msg" placeholder="Describe briefly what you have to donate and how many people it will serve..." style="height:100px"></textarea>
-        </div>
-        <div>
-            <input type="button" id="bt" value="Submit" onclick="submitData()" />
-        </div>
+  <div id='home-page'>
+    <h>Welcome to Food for the People </h></br>
+    <h>Austin Branch!</h>
+    I am a:
+    <ul>
+      <li><button class='button-looks-like-a-link' id='link-to-donor' onclick='openPage(this)'>Food Donor</button></li>
+      <li><button class='button-looks-like-a-link' id='link-to-deliverer' onclick='openPage(this)'>
+        Food Deliverer
+      </button></li>
+      <li><button class='button-looks-like-a-link' id='link-to-admin' onclick='openPage(this)'>Admin</button></li>
+    </ul>
+  </div>
+  <div id='donors-page' hidden>
+    <button class='button-looks-like-a-link' id='link-to-home' onclick='openPage(this)'>Home</button>
+    <h>Donations Form</h>
+    <p>Use the form below to submit your contact and donation information. Please do not speculate, only estimate, as we
+      are a team of real people, as well as the ones who will receive these donations are real people too.<br />Thank
+      you.<br /><br />FooDistro</p>
+    <div id='donorForm'>
+      <div>
+        <input type="text" id="name" placeholder="Enter your name here" />
+      </div>
+      <div>
+        <input type="text" id="phone" placeholder="Your contact phone number" />
+      </div>
+      <div>
+        <input type="text" id="email" placeholder="Your email address" />
+      </div>
+      <div>
+        <textarea id="message" name="message"
+          placeholder="Describe briefly what your donating and approximately how many it will serve"></textarea>
+      </div>
+      <div>
+        <input type="text" id="location" placeholder="The address where item(s) can be picked up by us" />
+      </div>
+      <div>
+        <input type="text" id="txtPUTime" placeholder="When will the item(s) be avail for pickup" />
+      </div>
+      <div>
+        <input type="button" id="bt" value="Submit" onclick="submitData('donorForm')" />
+      </div>
     </div>
-    <div id='confirmation-section'></div>
-    <button onclick="getData()">Get Data</button>
-    <div id='data-dump'></div>
-    <script src="index.js"></script>
+  </div>
+
+  <div id='deliverers-page' hidden>
+    <button class='button-looks-like-a-link' id='link-to-home' onclick='openPage(this)'>Home</button>
+    <h>Volunteer Form</h>
+    <p>Thank you for your interest in becoming a FooDistro donations mover. Please use the form below to submit your
+      contact information.<br />Thank you.<br /><br />FooDistro</p>
+    <div id='delivererForm'>
+      <div>
+        <input type="text" id="name" placeholder="Enter your name here" />
+      </div>
+      <div>
+        <input type="text" id="phone" placeholder="Your contact phone number" />
+      </div>
+      <div>
+        <input type="text" id="email" placeholder="Your email address" />
+      </div>
+      <div>
+        <input type="text" id="txtCity" placeholder="The city Where you Live" />
+      </div>
+      <div>
+        <input type="text" id="txtZip" placeholder="Your zip" />
+      </div>
+      <div>
+        <input type="button" id="bt" value="Submit" onclick="submitData('delivererForm')" />
+      </div>
+    </div>
+  </div>
+
+  <div id='thanks-page' hidden>
+    <button class='button-looks-like-a-link' id='link-to-home' onclick='openPage(this)'>Home</button>
+    <br />
+    <img src="https://help.formstack.com/hc/article_attachments/360015219371/image-2.gif">
+  </div>
+
+  <div id='admin-page' hidden>
+  </div>
+
+  <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
