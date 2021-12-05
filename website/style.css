@@ -60,3 +60,8 @@ input[type=button] {
   text-decoration: underline;
   cursor: pointer;
 }
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; 
+  }
+}
