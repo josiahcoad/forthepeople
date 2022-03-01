@@ -1,4 +1,4 @@
-- do a find and replace for "forthepeople" and replace with your app name (should be 8 occurances)
+- do a find and replace for "forthepeople" and replace with your app name (should be 8 occurances) (make sure that vscode isn't hiding some matches living in .chalice)
 - brew install httpie
 - python createtable.py
 - chalice local
